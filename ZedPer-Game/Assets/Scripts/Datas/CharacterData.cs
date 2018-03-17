@@ -2,7 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterData : MonoBehaviour
+[CreateAssetMenu()]
+public class CharacterData : ScriptableObject
 {
-	// This will be a Scriptable Object
+    [SerializeField]
+    private float m_Health;
+    [SerializeField]
+    private float m_Attack;
+    [SerializeField]
+    private float m_Defense;
+    [SerializeField]
+    private float m_Speed;
+    [SerializeField]
+    private float m_Luck;
+
+    public float Health
+    {
+        get { return m_Health; }
+    }
 }

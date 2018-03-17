@@ -5,13 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Use this for initialization
-    void Start()
+    private void Start()
     {
-
+		  CharacterData taMere = GameDatas.GetData<CharacterData>();
+		  Debug.Log(taMere.Health);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
     }
