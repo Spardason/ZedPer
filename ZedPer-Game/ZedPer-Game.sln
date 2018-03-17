@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZedPer-Game", "Assembly-CSharp.csproj", "{A2841AF4-E0DD-07BB-538B-62B30E6FC2DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZedPer-Game", "Assembly-CSharp-Editor.csproj", "{C7181B3E-0DCF-F9D2-8C46-71F7DCD9DAF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{A2841AF4-E0DD-07BB-538B-62B30E6FC2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2841AF4-E0DD-07BB-538B-62B30E6FC2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2841AF4-E0DD-07BB-538B-62B30E6FC2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7181B3E-0DCF-F9D2-8C46-71F7DCD9DAF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7181B3E-0DCF-F9D2-8C46-71F7DCD9DAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7181B3E-0DCF-F9D2-8C46-71F7DCD9DAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7181B3E-0DCF-F9D2-8C46-71F7DCD9DAF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
