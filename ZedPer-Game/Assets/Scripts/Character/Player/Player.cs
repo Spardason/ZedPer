@@ -8,7 +8,10 @@ public class Player : MonoBehaviour
     private void Start()
     {
 		  CharacterData taMere = GameDatas.GetData<CharacterData>();
-		  Debug.Log(taMere.Health);
+		  Debug.Log(taMere.name);
+
+      AudioManager tonPere = ApplicationManagers.GetManager<AudioManager>();
+      Debug.Log(tonPere.name);
     }
 
     // Update is called once per frame
