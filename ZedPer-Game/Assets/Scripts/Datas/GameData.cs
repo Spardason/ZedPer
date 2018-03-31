@@ -5,20 +5,20 @@ using UnityEditor;
 using System.Reflection;
 using System;
 
-public class GameDatas : ScriptableObject
+public class GameData : ScriptableObject
 {
-	private const string GAMEDATAS_PATH = "Assets/ScriptableObjects/Datas/GameDatas.asset";
+	private const string GAMEDATAS_PATH = "Assets/ScriptableObjects/Datas/GameData.asset";
 
     [SerializeField]
     private List<ScriptableObject> m_Datas = new List<ScriptableObject>();
 
-	private static GameDatas m_Instance;
+	private static GameData m_Instance;
 
-	public static GameDatas GetInstance()
+	public static GameData GetInstance()
 	{
 		if (!m_Instance)
 		{
-			m_Instance = AssetDatabase.LoadAssetAtPath<GameDatas>(GAMEDATAS_PATH);
+			m_Instance = AssetDatabase.LoadAssetAtPath<GameData>(GAMEDATAS_PATH);
 		}
 
 		return m_Instance;
@@ -26,7 +26,7 @@ public class GameDatas : ScriptableObject
 
     public static T GetData<T>() where T : ScriptableObject
     {
-        FieldInfo[] infos = typeof(GameDatas).GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+        FieldInfo[] infos = typeof(GameData).GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
         List<ScriptableObject> datas = new List<ScriptableObject>();
         for (int i = 0; i < infos.Length; i++)
         {

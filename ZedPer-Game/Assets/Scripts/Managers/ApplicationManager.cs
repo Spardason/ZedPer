@@ -4,12 +4,12 @@ using UnityEngine;
 using System.Reflection;
 using System;
 
-public class ApplicationManagers : MonoBehaviour
+public class ApplicationManager : MonoBehaviour
 {
     [SerializeField]
     private List<BaseManager> m_Managers = new List<BaseManager>();
 
-    private static ApplicationManagers m_Instance;
+    private static ApplicationManager m_Instance;
 
     private void Awake()
     {
@@ -22,13 +22,13 @@ public class ApplicationManagers : MonoBehaviour
         }
     }
 
-    public static ApplicationManagers Instance
+    public static ApplicationManager Instance
     {
         get
         {
             if (!m_Instance)
             {
-                m_Instance = FindObjectOfType<ApplicationManagers>();
+                m_Instance = FindObjectOfType<ApplicationManager>();
             }
 
             return m_Instance;
@@ -37,7 +37,7 @@ public class ApplicationManagers : MonoBehaviour
 
     public static T GetManager<T>() where T : BaseManager
     {
-        FieldInfo[] infos = typeof(ApplicationManagers).GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+        FieldInfo[] infos = typeof(ApplicationManager).GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
         List<BaseManager> datas = new List<BaseManager>();
         for (int i = 0; i < infos.Length; i++)
         {
