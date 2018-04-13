@@ -56,15 +56,15 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            m_IsPlaying = !m_IsPlaying;
-            if (m_IsPlaying)
-            {
-                AudioManager.Instance.PlaySound("SawingWood", 0.5f);
-            }
-            else
-            {
-                AudioManager.Instance.StopSound("SawingWood");
-            }
+            // m_IsPlaying = !m_IsPlaying;
+            // if (m_IsPlaying)
+            // {
+            //     AudioManager.Instance.PlaySound("SawingWood", 0.5f);
+            // }
+            // else
+            // {
+            //     AudioManager.Instance.StopSound("SawingWood");
+            // }
         }
 
         if (Input.GetKeyDown(KeyCode.S))
